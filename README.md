@@ -9,8 +9,6 @@
 ## Day 1 - Intro to Cloud & AWS
 
 * [What is cloud](what-is-cloud)
-  -  point 1
-  -  point 2
 * [AWS Basics](aws-basics)
 
 ## Day 2
