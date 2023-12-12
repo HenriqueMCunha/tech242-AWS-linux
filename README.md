@@ -11,9 +11,12 @@
 * [What is cloud](what-is-cloud)
 * [AWS Basics](aws-basics)
 
+
 ## Day 2
 
-Some more notes
+* [Creating an EC2 Instance](ec2-instance)
+* [Linux Commands](linux-commands)
+* [File Ownership](file-ownership)
 
 ![screenshot-vscode-readme-example.png](readme-images/screenshot-vscode-readme-example.png)
 
