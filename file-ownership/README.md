@@ -46,6 +46,11 @@ If the owner needs to grant execute permissions to a file or directory, they can
 To grant execute permisions to the group and others: 
 * `chmod ug+x filename` ->This overrides the umask and sets the execute permission for the owner (u) and the group (g).
 
+To grant execute permissions to everyone at the same time:
+* `sudo chmod +x filename`
+
+![Screenshot-file-permissions-owner.png](../readme-images/Screenshot-file-permissions-owner.png)
+
 ## What command is used to change the owner of a file or directory?
 
 The `chown` (change owner) command is used to change the owner of a file or directory. 
@@ -55,12 +60,5 @@ If I wanted to change the owner of bad_jokes.txt to Richard, I would write it as
 If I want to change the owner of a directory, do the `-R` flag after as it will recursively change the owner of the directory and all its contents.
 * `chown -R richard bad_jokes.txt`
 
-## Does being the owner of a file mean you have full permissions on that file?
 
-No, being the owner of a file does not automatically mean you have full permissions on that file. File permissions are a set of access restrictions that control who can read, write, and execute a file. These permissions are granted to the file's owner, the file's group, and anyone else who has access to the file or directory.
-
-* The owner of a file has default permissions that allow them to read, write, and execute the file. 
-* The owner can also modify these permissions to allow or deny access to others. For example, the owner could grant the group permission to read the file, or they could grant everyone permission to execute the file.
-
-So, while being the owner of a file gives us a certain level of control over its permissions, it does not give us unlimited access. Other users may still have permissions to read, write, or execute the file, depending on how the permissions are set.
 

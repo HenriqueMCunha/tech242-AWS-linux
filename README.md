@@ -18,10 +18,12 @@
 * [Creating an EC2 Instance](ec2-instance)
 * [Linux Commands](linux-commands)
 * [File Ownership](file-ownership)
+* [File Permissions](file-permissions)
 
 ## Day 3
 
 * [Building a Script in Linux](building-a-script)
+* [Processes](processes)
 
 ![screenshot-vscode-readme-example.png](readme-images/screenshot-vscode-readme-example.png)
 
