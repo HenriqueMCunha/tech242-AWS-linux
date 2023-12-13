@@ -44,70 +44,68 @@ Order of test:
 
 ### How to run a script file
 
-Need to provide the path for that script - need to tell it where that script is.
+First we'll need to provide the path for that script - need to tell it where that script is.
 
-./ - tells the shell to look for the file in the current working directory
-file needs the permission to be executed
+`./<file-name>` -> tells the shell to look for the file in the current working directory.
+Important to remember that the file needs the permission to be executed.
 
-sudo chmod +x <filename> - gives executing permission to all users - colour also changes
+We can check the file / directory permissions by using the `ls -l` command.
 
+Give executing permissions to all users:
+* `sudo chmod +x <filename>`
 
-Best practice is to edit script file to make sure we have a bit more assistance to help with troubleshooting.
-echo is print
-echo "I'm feeling great" - more than one word use quotation marks
-echo hello - one word fine
+Note: Colour of the file when using the `ls -l` command will show that the command has executable permissions.
 
-there's two sitations in 2 situations
-1 - you want them to run on a fresh virtual machine (it's to do with the concept of idempotency (or idempotent)
-When we run a script, for the first time, but also, it runs no matter how many times we want it to and work. If that is the case, it means that script is idempotent.
-We have to understand whether a script is idempotent. If it doesn't run after the first one, it is not idempotent.
-A lot of devops tools are idempotent, will achieve the desired outcome/ output at the end.
-2 - it runs no matter how many times we want it to and work.
+* Best Practice
+  * Edit script file to make sure we have more assistance to help with troubleshooting.
+  * We can add the `echo` command to display a word or string to the terminal.
+  * `echo hello` - for a single word, echo will display that word
+  * `echo "This is an echo"` - for more than one word, we'll need to use quotation marks
+
+![Screenshot echo-example.png](<../readme-images/Screenshot echo-example.png>)
+
+### How to check if script is working as intended
+
+There's two ways to check if the script is working properly:
+  * 1 - We want to run the scripts on a fresh virtual machine.
+  * 2 - The Script will run no matter how many times we want it to run and work every time.
+
+This has to do with the concept of idempotency (or idempotent).
+If the script runs for the first and every subsequent time (and works), then the script is idempotent.
 
 
 ### Environment Variables
 
+A variable is something that you want to store in memory.
+By convention , we should name variables in capital letters.
+To display those variables we need to use the command `echo $<variable-name>`.
+Variables are important as we may want to use a certain information several times in a script, for example.
+
+![Screenshot echo-variable-name.png](<../readme-images/Screenshot echo-variable-name.png>)
+
+This variable is not an environment variable. to create an environment variable, we'll need to utilize the `export <variable>`.
+This new variable will not only be considered an environment variable, but also be treated as just a variable.
+If we already had a variable with the same name before, when we use the command `export` it will replace the previous one in memory.
+We can find out which ones are environment variables by utilizing the `printenv` command.
+
+![Screenshot-printenv-example.png](../readme-images/Screenshot-printenv-example.png)
+
+Certain commands such as `pwd` will return the value that is assigned to the PWD environment variable.
+Environment variables are often used to store sensitive information.
+
+IMPORTANT: Never hardcode credentials! We would instead use environment variables to store those credentials.
+
+Note: Root has its own set of environment variables and we'll be able to see them by using the command `sudo printenv`.
+
+#### Persistency of Environment Variables
+
+An Environment variable is not persistent so it will disappear as soon as that terminal session is finished.
+To define and keep an environment variable, we'll need to define it in a file that loads up when we begin the session.
+
+* For this purpose, we can add it to the `.bashrc` file.
+* All we'll need to do is go to the bottom of the file and add the `export <variable>`.
+* That environment variable will still not be accessible as that file loads when the terminal starts.
+* Because of that, we can use the command `source .bashrc` to reload the file.
 
 
-printenv - prints environment
-variable is something you want to store in memory
-it shows certain values attached to those variable names
-pwd outputs PWD = /home/ubuntu value for example
-
-environment variables are often used to store sensitive information
-program looks for that inforamtion
-to then access the credentials that we need
-
-never hardcode credentials!
-you would use envi var to store those credentials
-probably wouldn't have them in memory, just temporary
-
-
-usual convention is to define them in capital letters and refer to them as well
-
-printenv USER instead of printenv user for example
-if we do sudo printenv USER will display user as root 
-root has its own set of environment vairables
-
-
-create an enviroment variable
-store a variable - MYNAME=henrique  (JUST A VARIABLE; NOT ENV VARIABLE)
-echo $MYNAME will output it
-
-if you want to use something a lot in your script, variables are imporatnt
-
-export MYNAME=Maria 
-will save it as an environemtn variable
-it's not only an env var but also a regular variable
-it replaces the previous one in memory because we exported it
-
-environment variable is not persistent so it will disappear after that session
-add it to a file that loads up when we begin the session
-add export command to bottom of .bashrc file
-
-source .bashrc will reload the bashrc file
-
-often we won't need env var to be persistent
-a lot of times you'll need to create envi variables to access them later through scripts
-
-
+Note: Often we win't need environment variables to be persistent but we might need to create them in order to access them later through scripts.
