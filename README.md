@@ -4,6 +4,7 @@
   - [Day 1 - Intro to Cloud \& AWS](#day-1---intro-to-cloud--aws)
   - [Day 2](#day-2)
   - [Day 3](#day-3)
+  - [Day 4](#day-4)
   - [How to chance directory in Linux](#how-to-chance-directory-in-linux)
 
 
@@ -24,6 +25,10 @@
 
 * [Building a Script in Linux](building-a-script)
 * [Processes](processes)
+
+## Day 4
+
+* [Deploy Java Atlas App](deploy-java-atlas-app)
 
 ![screenshot-vscode-readme-example.png](readme-images/screenshot-vscode-readme-example.png)
 

@@ -10,6 +10,8 @@ We can ither create this file by using `touch` or `nano` commands.
 One of the imporatnt steps of creating a script is to plan how the script is going to work, or what steps it will take before starting to write our script.
 * Example:
   ```
+  #!/bin/bash 
+
   # update
 
   # upgrade
