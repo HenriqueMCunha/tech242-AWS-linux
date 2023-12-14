@@ -89,6 +89,8 @@ echo "DONE!"
 ### Testing automation in new VM
 
 Create new VM.
+
+
 ![Screenshot-ec2-automated.png](../readme-images/Screenshot-ec2-automated.png)
 
 Create new script file, add above script.
