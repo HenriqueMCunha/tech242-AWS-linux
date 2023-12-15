@@ -33,6 +33,10 @@
 
 ## Day 5
 * [Deploy Java Atlas App with User Data](deploy-java-atlas-user-data/README.md)
+* [Apache Manual reverse Proxy](apache-manual-reverse-proxy)
+* [Apache Automated Reverse Proxy](apache-automated-reverse-proxy)
+
+
 
 
 ![screenshot-vscode-readme-example.png](readme-images/screenshot-vscode-readme-example.png)
