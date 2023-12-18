@@ -36,3 +36,14 @@ Once the Image has finished assembling, we'll need to launch an instance from it
 
 
 ![Screenshot-ami-instance-user-data.png](../readme-images/Screenshot-ami-instance-user-data.png)
+
+## Deregistering AMI
+
+When we don't want to keep an AMI anymore, we can delete it by deregistering it.
+
+![Screenshot-ami-deregistering.png](../readme-images/Screenshot-ami-deregistering.png)
+
+After we deregister the AMI, it's good practice to delete the snapshot of that AMI so we don't keep the storage running.
+
+![Screenshot-ami-delete-snapshot.png](../readme-images/Screenshot-ami-delete-snapshot.png)
+

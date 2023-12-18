@@ -4,15 +4,21 @@
 
 ## Configure Apache Web Server Reverse Proxy
 
+
+### Update and Upgrade Virtual Machine
+
+```
 sudo apt update -y
 sudo DEBIAN_FRONTEND=noninteractive apt upgrade -y
+```
+### Install apache web server
 
-# install apache web server
-
+```
 sudo DEBIAN_FRONTEND=noninteractive apt install apache2 -y
+```
+### Start and enable apache web server and reload source
 
-# start and enable apache web server and reload source
-
+```
 sudo systemctl start apache2
 sudo systemctl enable apache2
 
@@ -37,4 +43,4 @@ sudo a2ensite json.com.conf
 
 sudo systemctl restart apache2
 
-
+```
