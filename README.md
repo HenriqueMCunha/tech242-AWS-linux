@@ -6,7 +6,6 @@
   - [Day 3](#day-3)
   - [Day 4](#day-4)
   - [Day 5](#day-5)
-  - [How to chance directory in Linux](#how-to-chance-directory-in-linux)
 
 
 ## Day 1 - Intro to Cloud & AWS
@@ -38,18 +37,4 @@
 
 
 
-
-![screenshot-vscode-readme-example.png](readme-images/screenshot-vscode-readme-example.png)
-
-
-## How to chance directory in Linux
-
-Change directory using this command: `cd <directory>`
-
-Change directory using this command:
-
-```
-cd <directory>
-<other commands>
-```
 
