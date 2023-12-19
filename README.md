@@ -6,6 +6,7 @@
   - [Day 3](#day-3)
   - [Day 4](#day-4)
   - [Day 5](#day-5)
+  - [Day 6](#day-6)
 
 
 ## Day 1 - Intro to Cloud & AWS
@@ -35,6 +36,8 @@
 * [Apache Manual reverse Proxy](apache-manual-reverse-proxy)
 * [Apache Automated Reverse Proxy](apache-automated-reverse-proxy)
 
+## Day 6
 
+* [Apache Automated Reverse Proxy Using `sed` command](apache-automated-reverse-proxy-sed)
 
 
