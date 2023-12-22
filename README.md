@@ -44,7 +44,8 @@
 
 ## Day 7, 8 and 9
 
-* https://github.com/HenriqueMCunha/tech242-2-tier-deploy-with-world-api/blob/main/README.md
+* Project of two tier (logic and data tiers) deployment on AWS:
+  * https://github.com/HenriqueMCunha/tech242-2-tier-deploy-with-world-api/blob/main/README.md
 
 ## Day 10
 
