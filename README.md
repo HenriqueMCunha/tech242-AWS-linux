@@ -7,6 +7,8 @@
   - [Day 4](#day-4)
   - [Day 5](#day-5)
   - [Day 6](#day-6)
+  - [Day 7, 8 and 9](#day-7-8-and-9)
+  - [Day 10](#day-10)
 
 
 ## Day 1 - Intro to Cloud & AWS
@@ -40,4 +42,11 @@
 
 * [Apache Automated Reverse Proxy Using `sed` command](apache-automated-reverse-proxy-sed)
 
+## Day 7, 8 and 9
 
+* https://github.com/HenriqueMCunha/tech242-2-tier-deploy-with-world-api/blob/main/README.md
+
+## Day 10
+
+* [AWS VPCs](aws-vpcs)
+* [Creating a VPC](creating-a-vpc)

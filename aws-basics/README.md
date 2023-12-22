@@ -20,7 +20,7 @@ AWS Regions and Availability Zones work together to provide high availability an
 
 AWS Regions and Availability Zones are important for several reasons:
 
-  * High availability: Deploying applications across multiple AZs can provide high availability in case of a failure in a single AZ.
+  * High availability: Deploying applications across multiple AZs can provide high availability in case of a failure in a single AZ (Disaster Recovery Plan).
 Reduced latency: By deploying applications in a region that is close to your users, you can reduce latency and improve performance for your applications.
 Compliance: AWS has compliance programs for each region. You can choose a region that is compliant with the regulations that apply to you.
 How many AWS Regions and Availability Zones are there?
