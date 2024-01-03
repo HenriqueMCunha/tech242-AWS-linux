@@ -56,3 +56,4 @@
 ## Day 12
 
 [S3 Storage](s3-storage)
+[Scary Cat Photo Change](scary-cat-photo-change)
