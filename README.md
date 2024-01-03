@@ -9,6 +9,7 @@
   - [Day 6](#day-6)
   - [Day 7, 8 and 9](#day-7-8-and-9)
   - [Day 10](#day-10)
+  - [Day 12](#day-12)
 
 
 ## Day 1 - Intro to Cloud & AWS
@@ -51,3 +52,7 @@
 
 * [AWS VPCs](aws-vpcs)
 * [Creating a VPC](creating-a-vpc)
+
+## Day 12
+
+[S3 Storage](s3-storage)
