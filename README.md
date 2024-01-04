@@ -10,6 +10,7 @@
   - [Day 7, 8 and 9](#day-7-8-and-9)
   - [Day 10](#day-10)
   - [Day 12](#day-12)
+  - [Day 13](#day-13)
 
 
 ## Day 1 - Intro to Cloud & AWS
@@ -57,3 +58,10 @@
 
 * [S3 Storage](s3-storage)
 * [Scary Cat Photo Change](scary-cat-photo-change)
+
+## Day 13
+
+* [S3 Storage](s3-storage)
+* [Scary Cat Photo Change](scary-cat-photo-change)
+* [Revert Home Page to Normal Script](revert-to-normal-cat-script)
+
