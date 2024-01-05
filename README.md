@@ -8,9 +8,10 @@
   - [Day 5](#day-5)
   - [Day 6](#day-6)
   - [Day 7, 8 and 9](#day-7-8-and-9)
-  - [Day 10](#day-10)
-  - [Day 12](#day-12)
-  - [Day 13](#day-13)
+  - [Day 10 - AWS VPCs](#day-10---aws-vpcs)
+  - [Day 12 - S3 Storage](#day-12---s3-storage)
+  - [Day 13 - S3 Storage](#day-13---s3-storage)
+  - [Day 14 - Monitoring and Alert Management / Auto Scaling Groups](#day-14---monitoring-and-alert-management--auto-scaling-groups)
 
 
 ## Day 1 - Intro to Cloud & AWS
@@ -49,19 +50,24 @@
 * Project of two tier (logic and data tiers) deployment on AWS:
   * https://github.com/HenriqueMCunha/tech242-2-tier-deploy-with-world-api/blob/main/README.md
 
-## Day 10
+## Day 10 - AWS VPCs
 
 * [AWS VPCs](aws-vpcs)
 * [Creating a VPC](creating-a-vpc)
 
-## Day 12
+## Day 12 - S3 Storage
 
 * [S3 Storage](s3-storage)
 * [Scary Cat Photo Change](scary-cat-photo-change)
 
-## Day 13
+## Day 13 - S3 Storage
 
 * [S3 Storage](s3-storage)
 * [Scary Cat Photo Change](scary-cat-photo-change)
 * [Revert Home Page to Normal Script](revert-to-normal-cat-script)
 
+## Day 14 - Monitoring and Alert Management / Auto Scaling Groups
+
+* [Monitoring and Alert Management](monitoring-and-alert-management)
+* [Auto Scaling Groups](auto-scaling-groups)
+  

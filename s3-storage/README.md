@@ -2,21 +2,21 @@
 
 S3 Storage (or Amazon Simple Storage Service) is a scalable and highly durable object storage service provided by Amazon Web Services (AWS).  It is designed to store and retrieve any amount of data from anywhere on the web. S3 is commonly used for backup, archiving, content distribution, data storage for web applications, and more.
 
-It is available globally and has a level of redundancy:
-    * S3 stores data across multiple devices at geographically dispersed locations within an Availability Zone (AZ). This means an entire AZ needs to be down for data to be lost. Even within an AZ, data is spread across multiple devices, further bolstering redundancy.
-    * For extra protection, an user can opt to store data across multiple AZs within a Region. This ensures data remains accessible even if an entire AZ experiences an outage.
-    * S3 regularly verifies the integrity of data using checksums. This detects any corruption and triggers automatic repairs, ensuring data consistency.
-      * A checksum is a small piece of data, typically a string of letters and numbers, that acts as a unique fingerprint for a larger block of data like a file or a message. It's used to verify the integrity of the data, meaning it helps ensure that the data hasn't been corrupted or altered in any way during transmission or storage.
+### It is available globally and has a level of redundancy:
+ * S3 stores data across multiple devices at geographically dispersed locations within an Availability Zone (AZ). This means an entire AZ needs to be down for data to be lost. Even within an AZ, data is spread across multiple devices, further bolstering redundancy.
+ * For extra protection, an user can opt to store data across multiple AZs within a Region. This ensures data remains accessible even if an entire AZ experiences an outage.
+ * S3 regularly verifies the integrity of data using checksums. This detects any corruption and triggers automatic repairs, ensuring data consistency.
+ * A checksum is a small piece of data, typically a string of letters and numbers, that acts as a unique fingerprint for a larger block of data like a file or a message. It's used to verify the integrity of the data, meaning it helps ensure that the data hasn't been corrupted or altered in any way during transmission or storage.
 
-It also provides High Availability:
-    * S3's distributed architecture enables it to automatically adapt to hardware failures without impacting data access. If a device fails, data remains accessible on other devices.
-    * S3 allows users to easily scale their storage capacity on demand. This ensures user's applications can access data quickly and efficiently even as their data volume grows.
-    * AWS has a global network of Regions and AZs, providing low latency access to user's data from anywhere in the world.
+### It also provides High Availability:
+ * S3's distributed architecture enables it to automatically adapt to hardware failures without impacting data access. If a device fails, data remains accessible on other devices.
+ * S3 allows users to easily scale their storage capacity on demand. This ensures user's applications can access data quickly and efficiently even as their data volume grows.
+ * AWS has a global network of Regions and AZs, providing low latency access to user's data from anywhere in the world.
 
-How S3 Storage helps in disaster recovery:
-    * S3 Storage allows for S3 Replication. This means that users can replicate their data to another S3 Bucket in a different Region. This creates a geographically separate copy of the user's data, which can prove invaluable in case of a regional disaster.
-    * For long-term archival needs, Glacier Deep Archive offers extremely durable storage at a very low cost. This is ideal for disaster recovery purposes, as it ensures user's data can be retrieved even if their primary storage is unavailable.
-    * S3 also allows users to enable versioning, which keeps previous versions of their data even after they overwrite it. This provides a safety net in case of accidental deletion or corruption.
+### How S3 Storage helps in disaster recovery:
+ * S3 Storage allows for S3 Replication. This means that users can replicate their data to another S3 Bucket in a different Region. This creates a geographically separate copy of the user's data, which can prove invaluable in case of a regional disaster.
+ * For long-term archival needs, Glacier Deep Archive offers extremely durable storage at a very low cost. This is ideal for disaster recovery purposes, as it ensures user's data can be retrieved even if their primary storage is unavailable.
+ * S3 also allows users to enable versioning, which keeps previous versions of their data even after they overwrite it. This provides a safety net in case of accidental deletion or corruption.
 
 
 
