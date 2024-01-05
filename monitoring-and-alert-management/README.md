@@ -5,11 +5,17 @@
 
 ## Worst Case to Best Case Scenario Example
 
-### Worst Case
+### Worst Case Scenario - No Monitoring
 
 In a worst case scenaio, there would not be any kind of monitoring of CPU Load of our App VM. That would make it impossible to react or prevent to when the app falls over.
 
-### second Worst Case Scenario
+#### Challenges
+
+* Lack of visibility.
+* Impossibility to prevent or react to performance issues.
+* High possibility of app falling over and compromising user experience.
+
+### Second Worst Case Scenario - Manual Monitoring with Dashboard
 
 In this scenario, we would use CloudWatch Monitoring which is a tool to be able to see how much CPU usage (amongst other things) are being used by the Virtual Machine.
 
@@ -36,6 +42,10 @@ After that has been done, we are able to maximize the CPU utilization graph and 
 
 ![Screenshot-cpu-graph.png](../readme-images/Screenshot-cpu-graph.png)
 
+#### Challenges
+
+* The challenges with this approach is that it is impossible for a person to keep constant watch over the dashboard.
+* Human error is unavoidable and important information or situations can easily be missed.
 
 
 
