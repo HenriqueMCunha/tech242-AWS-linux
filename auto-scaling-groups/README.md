@@ -1,5 +1,41 @@
 # Auto Scaling Groups
 
+## Scaling
+
+Scaling is the ability to handle increeased workload or demand by expanding the resources, infrastucture or processes of a system. 
+
+Scaling is crucial in DevOps to ensure that applications and systems can handle increased traffic, data, or computational requirements. 
+
+There are two main types of Scaling:
+* Vertical Scaling (Scaling Up / Down)
+* Horizontal Scaling (Scaling Out / In)
+
+### Vertical Scaling
+
+This involves adding more resources to an existing server or upgrading its hardware. 
+
+* When scaling up, it is like saying we want another Virtual Machine with more memory and more CPU.
+* Scaling down would be the opposite.
+
+In this type of scaling, the workload will have to be moved from the existing VM to the new VM. After the workload has been moved, the previous VM is terminated.
+
+#### Limitations
+
+* Vertical scaling is often limited by the capacity of a single machine and may not be as cost-effective as horizontal scaling.
+* Scaling down presents more challenges.
+
+### Horizontal Scaling
+
+This involves adding more machines or nodes to a system, distributing the workload across multiple servers. 
+
+Horizontal Scaling is typically more scalable and cost-effective than vertical scaling because it allows for the addition of resources in smaller increments and takes advantage of the ability to run in parallel.
+
+* Scaling Out - Will create more virtual machines as needed to fulfill demand.
+* Scaling In - Will terminate the virtual machines if there is no need to have that many Virtual Machines for current demand.
+
+![Screenshot-scale-up-and-out.png](../readme-images/Screenshot-scale-up-and-out.png)
+
+
 ## Diagram 
 
 ![Auto Scaling Groups Diagram.png](<../readme-images/Auto Scaling Groups Diagram.png>)

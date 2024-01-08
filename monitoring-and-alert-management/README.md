@@ -5,7 +5,7 @@
 
 ## Worst Case to Best Case Scenario Example
 
-### Worst Case Scenario - No Monitoring
+### First Scenario - Worst Case Scenario - No Monitoring
 
 In a worst case scenaio, there would not be any kind of monitoring of CPU Load of our App VM. That would make it impossible to react or prevent to when the app falls over.
 
@@ -15,7 +15,7 @@ In a worst case scenaio, there would not be any kind of monitoring of CPU Load o
 * Impossibility to prevent or react to performance issues.
 * High possibility of app falling over and compromising user experience.
 
-### Second Worst Case Scenario - Manual Monitoring with Dashboard
+### Second Scenario - Second Worst Case Scenario - Manual Monitoring with Dashboard
 
 In this scenario, we would use CloudWatch Monitoring which is a tool to be able to see how much CPU usage (amongst other things) are being used by the Virtual Machine.
 
@@ -47,5 +47,13 @@ After that has been done, we are able to maximize the CPU utilization graph and 
 * The challenges with this approach is that it is impossible for a person to keep constant watch over the dashboard.
 * Human error is unavoidable and important information or situations can easily be missed.
 
+### Third Scenario -Alert Management System - Second best case scenario
 
+In this scenario, we'll still have CloudWatch Monitoring to check CPU load. 
+We'l have an Alert Management System to send an alert to a specific member of staff when the CPU utilization reaches a particular threshold.
+It's important to set the alert to be sent to the right person, i.e., someone who currently working, is on call, not asleep or in general available to respond to the situation if needed.
 
+### Fourth Scenario - Automatic Response - Best case scenario
+
+In this scenario, we'll have an auto-scaling group which is responsible to set up the virtual machines according to the demand.
+Cost is the main defining factor in how many VMs we can create as each new instance will cost the company more money. 
