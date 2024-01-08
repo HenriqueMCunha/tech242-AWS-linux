@@ -104,6 +104,10 @@ Now, we'll create an alarm for an existing EC2 Instance.
 
 ![Screenshot-alert-email.png](../readme-images/Screenshot-alert-email.png)
 
+12. We can see the CPU Utilization and what triggered the alarm on CloudWatch.
+    
+![Screenshot-alert-cloudwatch-monitoring.png](../readme-images/Screenshot-alert-cloudwatch-monitoring.png)
+
 ### Fourth Scenario - Automatic Response - Best case scenario
 
 In this scenario, we'll have an auto-scaling group which is responsible to set up the virtual machines according to the demand.
