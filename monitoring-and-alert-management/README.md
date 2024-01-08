@@ -92,7 +92,7 @@ Now, we'll create an alarm for an existing EC2 Instance.
 7. Alternatively, we could select an existing SNS topic and send a notification to everyone within a particular mailing group, which would be useful when working collaboratively.
 ![Screenshot-alarm-set-notification.png](../readme-images/Screenshot-alarm-set-notification.png)
 
-8. We'll add a name and description to the alarm. Be careful to choose a descriptive name, so it will be easier to find in the Alarms section.
+8. We'll add a name and description to the alarm. Be careful to choose a descriptive name, so it will be easier to find in the Alarms section (and impossible to change the name once set).
 
 ![Screenshot-alarm-set-name-description.png](../readme-images/Screenshot-alarm-set-name-description.png)
 
