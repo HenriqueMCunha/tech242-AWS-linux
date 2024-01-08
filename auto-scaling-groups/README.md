@@ -35,6 +35,9 @@ Horizontal Scaling is typically more scalable and cost-effective than vertical s
 
 ![Screenshot-scale-up-and-out.png](../readme-images/Screenshot-scale-up-and-out.png)
 
+## Auto-Scaling
+
+With Auto-Scaling systems can automatically adjust their resources based on predefined metrics or thresholds. This ensures that the infrastructure can adapt to varying workloads without manual intervention.
 
 ## Diagram 
 
