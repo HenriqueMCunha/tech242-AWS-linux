@@ -37,7 +37,7 @@ Horizontal Scaling is typically more scalable and cost-effective than vertical s
 
 ## Auto-Scaling
 
-With Auto-Scaling systems can automatically adjust their resources based on predefined metrics or thresholds. This ensures that the infrastructure can adapt to varying workloads without manual intervention.
+With Auto-Scaling Groups, systems can automatically adjust their resources based on predefined metrics or thresholds. This ensures that the infrastructure can adapt to varying workloads without manual intervention.
 
 ## Diagram 
 
