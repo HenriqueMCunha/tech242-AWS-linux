@@ -2,7 +2,7 @@
 - [CI / CD](#ci--cd)
   - [Continuous Integration](#continuous-integration)
   - [Continuous Delivery](#continuous-delivery)
-    - [Continuous Deployment](#continuous-deployment)
+  - [Continuous Deployment](#continuous-deployment)
   - [Differences between Continuous Delivery and Continuous Deployment](#differences-between-continuous-delivery-and-continuous-deployment)
   - [Jenkins](#jenkins)
     - [Benefits](#benefits)
@@ -11,10 +11,12 @@
     - [Alternatives to Jenkins](#alternatives-to-jenkins)
     - [Why is it referred as a Pipeline?](#why-is-it-referred-as-a-pipeline)
     - [Why build a Pipeline?](#why-build-a-pipeline)
+  - [Building a CI / CD pipeline with Jenkins](#building-a-ci--cd-pipeline-with-jenkins)
+    - [Notes to integrate further](#notes-to-integrate-further)
 
 CI / CD is essentially a set of practices:
 * Continuous Integration
-* Continuous Delivery
+* Continuous Delivery/Deployment
 
 ## Continuous Integration
 
@@ -25,10 +27,15 @@ CI / CD is essentially a set of practices:
 
 * Continuous Delivery (CD) is an extension of CI by automatically deploying code changes to testing or staging environments after successful builds. It aims to make the delivery process more reliable and faster, allowing teams to release software more frequently and with greater confidence.
 * This allows for faster deployments and smoother releases.
+* What is delivered?
+  * Ready to be deployed code.
+  * Will create artifacts (e.g. jar file in java)
 
-### Continuous Deployment
+## Continuous Deployment
 
 Continuous deployment is a strategy in software development where code changes to an application are released automatically into the production environment.
+* It's faster for end users.
+* There's continuous feedback from end users to developers)
 
 ![diagram-ci-cd.png](../../readme-images/diagram-ci-cd.png)
 
@@ -86,9 +93,24 @@ There's a few alternatives to using Jenkins:
 
 A CI/CD pipeline is an automated software delivery process that combines the practices of continuous integration (CI) and continuous delivery (CD). It is essentially an assembly line for building, testing, and deploying software updates.
 
+![diagram-ci-cd-pipeline-diagram.png](../../readme-images/diagram-ci-cd-pipeline-diagram.png)
+
 ### Why build a Pipeline?
 
 There's several compelling reasons to build a CI/CD pipeline:
+* The biggest reason to have CI/CD pipelines is to get the usable software into the hands of the end users. 
 * Increased speed and efficiency:
 * Improved quality and reliability / Consistency:
 * Enhanced collaboration and communication:
+
+
+## Building a CI / CD pipeline with Jenkins
+
+![jenkins-ci-cd-diagram.png](../../readme-images/jenkins-ci-cd-diagram.png)
+
+### Notes to integrate further
+
+* When a change is made in dev, have they been fully tested yet? There should be a system to of how you test it.
+* Main branch is production ready code only.
+* Pipeline will take care of testing and mergin into dev.
+* 
