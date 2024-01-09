@@ -11,7 +11,9 @@
     - [Alternatives to Jenkins](#alternatives-to-jenkins)
     - [Why is it referred as a Pipeline?](#why-is-it-referred-as-a-pipeline)
     - [Why build a Pipeline?](#why-build-a-pipeline)
+  - [Build a new project on Jenkins](#build-a-new-project-on-jenkins)
   - [Building a CI / CD pipeline with Jenkins](#building-a-ci--cd-pipeline-with-jenkins)
+    - [Structure](#structure)
     - [Notes to integrate further](#notes-to-integrate-further)
 
 CI / CD is essentially a set of practices:
@@ -103,14 +105,41 @@ There's several compelling reasons to build a CI/CD pipeline:
 * Improved quality and reliability / Consistency:
 * Enhanced collaboration and communication:
 
+## Build a new project on Jenkins
+
+1 - When logged in to Jenkins, select to create a new Item.
+
+![Screenshot-freestyle-project.png](../../readme-images/Screenshot-freestyle-project.png)
+
+2 -  Give a general description.
+3 - Select to Discard old builds (this will set up a limit of how many builds we want there to be stored)
+
+![Screenshot-jenkins-discard-old-builds.png](../../readme-images/Screenshot-jenkins-discard-old-builds.png)
+
+4 - In build steps, select execute shell and then write the commands we want the shell to execute.
+
+![Screenshot-jenkins-build-steps.png](../../readme-images/Screenshot-jenkins-build-steps.png)
+
+5 - If we want to string multiple projects/jobs, we can go to Post-Build Actions and select which project to run after the first one builds successfully.
+
+![Screenshot-jenkins-post-build-actions.png](../../readme-images/Screenshot-jenkins-post-build-actions.png)
 
 ## Building a CI / CD pipeline with Jenkins
 
+One of the first Steps will be to create an SSH key-pair and associate the public key with the specific repo that we want Jenkins to have access to.
+
+* More to add!
+
+![Screenshot-jenkins-github-public-key.png](../../readme-images/Screenshot-jenkins-github-public-key.png)
+
+
+### Structure
+
 ![jenkins-ci-cd-diagram.png](../../readme-images/jenkins-ci-cd-diagram.png)
+
 
 ### Notes to integrate further
 
 * When a change is made in dev, have they been fully tested yet? There should be a system to of how you test it.
 * Main branch is production ready code only.
 * Pipeline will take care of testing and mergin into dev.
-* 
