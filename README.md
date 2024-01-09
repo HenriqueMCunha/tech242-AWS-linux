@@ -13,6 +13,7 @@
   - [Day 13 - S3 Storage](#day-13---s3-storage)
   - [Day 14 - Monitoring and Alert Management / Auto Scaling Groups](#day-14---monitoring-and-alert-management--auto-scaling-groups)
   - [Day 15 - SSH Key and CI/CD and Jenkins](#day-15---ssh-key-and-cicd-and-jenkins)
+  - [Day 16 - CI/CD Pipelines and Jenkins](#day-16---cicd-pipelines-and-jenkins)
 
 
 ## Day 1 - Intro to Cloud & AWS
@@ -76,3 +77,8 @@
 
 * [SSH Keys](https://github.com/HenriqueMCunha/tech242-ssh)
 * [CI / CD](CI/CD-with-jenkins)
+
+## Day 16 - CI/CD Pipelines and Jenkins
+
+* [CI/CD Pipelines and Jenkins](CI/CI-CD-with-Jenkins)
+
