@@ -14,6 +14,7 @@
   - [Day 14 - Monitoring and Alert Management / Auto Scaling Groups](#day-14---monitoring-and-alert-management--auto-scaling-groups)
   - [Day 15 - SSH Key and CI/CD and Jenkins](#day-15---ssh-key-and-cicd-and-jenkins)
   - [Day 16 - CI/CD Pipelines and Jenkins](#day-16---cicd-pipelines-and-jenkins)
+  - [Day 17 - CI / CD Pipelines with Jenkins](#day-17---ci--cd-pipelines-with-jenkins)
 
 
 ## Day 1 - Intro to Cloud & AWS
@@ -81,4 +82,6 @@
 ## Day 16 - CI/CD Pipelines and Jenkins
 
 * [CI/CD Pipelines and Jenkins](CI/CI-CD-with-Jenkins)
+
+## Day 17 - CI / CD Pipelines with Jenkins
 

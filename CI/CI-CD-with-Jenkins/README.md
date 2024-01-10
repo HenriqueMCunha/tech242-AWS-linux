@@ -126,11 +126,41 @@ There's several compelling reasons to build a CI/CD pipeline:
 
 ## Building a CI / CD pipeline with Jenkins
 
-One of the first Steps will be to create an SSH key-pair and associate the public key with the specific repo that we want Jenkins to have access to.
-
-* More to add!
+1 - The first Steps will be to create an SSH key-pair and associate the public key with the specific repo that we want Jenkins to have access to.
 
 ![Screenshot-jenkins-github-public-key.png](../../readme-images/Screenshot-jenkins-github-public-key.png)
+
+2 - Next, we'll want to create the first job, which will be responsible for doing the testing.
+
+* For that, we'll create a new freestyle project and give it a descriptive name. On the `Configure` section, give it a general description and just like above, we decided to keep a maximum of 3 builds in history.
+
+3 - On source code Management section, we'll select Git:
+  * Get the repository's SSH URL on the specific section.
+  * Add Credentials(Private Key):
+    * In `Kind` section, choose `SSH Username with private key`.
+    * For ID and username, give the name of the file of the private key.
+    * For description, type `read/write to repo`.
+    * Enter the private key.
+    * Press Add.
+    * Back on the credenitals section, select the credential that was just added.
+
+![Screenshot-jenkins-add-private-key.png](../../readme-images/Screenshot-jenkins-add-private-key.png)
+
+  * On branches to build, correct `*/master` to `*/main`.
+
+![Screenshot-jenkins-source-code-management.png](../../readme-images/Screenshot-jenkins-source-code-management.png)
+
+4 - On Build Tests, we'll select `Invoke top-level Maven targets`:
+  * Select the required Maven Version.
+  * For goals, type `package test`, to run both of those goals in that order.
+
+![Screenshots-jenkins-job-1-build-steps.png](../../readme-images/Screenshots-jenkins-job-1-build-steps.png)
+
+5 - Webhook
+
+6 - Post-Build Actions
+
+
 
 
 ### Structure
