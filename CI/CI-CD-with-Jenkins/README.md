@@ -158,9 +158,40 @@ There's several compelling reasons to build a CI/CD pipeline:
 
 5 - Webhook
 
-6 - Post-Build Actions
+* In the `Configure` section in the job/project that we want to be triggered, we'll go to Source Code Management and change the Branch Specifier to `*/dev`.
 
+![Screenshot-jenkins-change-listening-branch-to-dev.png](../../readme-images/Screenshot-jenkins-change-listening-branch-to-dev.png)
 
+* In the same page, go to the `Build Triggers` section and select the `GitHub hook trigger for GITScm polling`.
+
+![Screenshot-jenkins-LISTEN-trigger.png](../../readme-images/Screenshot-jenkins-LISTEN-trigger.png)
+
+* Go over to to the GitHub repository that we want to trigger the pipeline.
+* Go to Settings and select `Webhooks`.
+* Select add webhook and then place the jenkins URL followed by `/github-webhook/`.
+* Make sure that the option is only to trigger due to a push.
+
+![Screenshot-jenkins-add-webhook.png](../../readme-images/Screenshot-jenkins-add-webhook.png)
+
+6 - Post-Build Actions Job 1
+
+* Once Job/Project 2 has been created, add this Job 2 to build after Job 1 is finished.
+
+7 - Create Job to merge dev branch to the main branch.
+
+* On Source Code management, keep the same initial part as in the previous job.
+* Add additional behaviours and choose `Merge Before Build`.
+  * We can leave the name of the repository blank if you want it to be origin.
+  * Set the branch you want to merge to as `main`.
+  * Leave the rest of the options as they were.
+
+![Screenshot-jenkins-merge-before-build.png](../../readme-images/Screenshot-jenkins-merge-before-build.png)
+
+* On Post-build Actions, choose `Git Publisher`:
+  * Select `Select Push Only if Build Succeeds`.
+  * Select `Merge Results`.
+
+![Screenshot-jenkins-git-publisher.png](../../readme-images/Screenshot-jenkins-git-publisher.png)
 
 
 ### Structure
