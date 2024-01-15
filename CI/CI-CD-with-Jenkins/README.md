@@ -13,6 +13,7 @@
     - [Why build a Pipeline?](#why-build-a-pipeline)
   - [Build a new project on Jenkins](#build-a-new-project-on-jenkins)
   - [Building a CI / CD pipeline with Jenkins](#building-a-ci--cd-pipeline-with-jenkins)
+    - [Job/Project 3](#jobproject-3)
     - [Structure](#structure)
     - [Notes to integrate further](#notes-to-integrate-further)
 
@@ -192,6 +193,34 @@ There's several compelling reasons to build a CI/CD pipeline:
   * Select `Merge Results`.
 
 ![Screenshot-jenkins-git-publisher.png](../../readme-images/Screenshot-jenkins-git-publisher.png)
+
+
+### Job/Project 3
+
+1 - Create a new job. We can base it on a previous job by choosing the option `Copy from`:
+
+![Screenshot-cd-copy-from.png](../../readme-images/Screenshot-cd-copy-from.png)
+
+2 - Set job 2 to trigger job 3 when it is finished.
+
+3 - We won't need Source Code Management so we'll leave that option as `None`.
+
+4 - On Build Environment, select `SSH Agent` and `Add` to provide Jenkins with the SSH credentials.
+
+![Screenshot-cd-add-pem-file.png](../../readme-images/Screenshot-cd-add-pem-file.png)
+
+5 - On Build Steps, select `Execute Shell`, then add the following commands:
+  * 5.1 - `ssh -o StrictHostKeyChecking=no ubuntu@ec2-54-74-224-128.eu-west-1.compute.amazonaws.com 'sudo chmod -R 777 /repo'` 
+  * 5.1b - Explanation - This command connects to the remote server using SSH as the user "ubuntu" and uses the command to recursively change the permissions.
+  * 5.2 - `scp -o StrictHostKeyChecking=no -r ../henrique-jsonvh-job1-ci-test/springapi ubuntu@ec2-54-74-224-128.eu-west-1.compute.amazonaws.com:/repo
+`
+  * 5.2b - Explanation - This command recursively copies the "springapi" directory from the local machine (in this case, the agent node) to the remote servers (EC2 instance) "/repo" directory.
+  * 5.3 - `scp -o StrictHostKeyChecking=no -r ../henrique-jsonvh-job1-ci-test/TestResults ubuntu@ec2-54-74-224-128.eu-west-1.compute.amazonaws.com:/repo
+`
+  * 5.3b - Explanation - This command does the same thing as the command above but with the "TestResults" directory.
+  * 5.4 - `ssh -o StrictHostKeyChecking=no -i ubuntu ubuntu@ec2-54-74-224-128.eu-west-1.compute.amazonaws.com 'cd /repo/springapi; sudo mvn clean package'
+`
+  * 5.4b - Explanation - This command connects to the remote server, changes the working directory and executes the command to clean and package. 
 
 
 ### Structure

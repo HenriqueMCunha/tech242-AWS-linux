@@ -15,6 +15,8 @@
   - [Day 15 - SSH Key and CI/CD and Jenkins](#day-15---ssh-key-and-cicd-and-jenkins)
   - [Day 16 - CI/CD Pipelines and Jenkins](#day-16---cicd-pipelines-and-jenkins)
   - [Day 17 - CI / CD Pipelines with Jenkins](#day-17---ci--cd-pipelines-with-jenkins)
+  - [Day 18,19 - Preparation to Final Quality Gate](#day-1819---preparation-to-final-quality-gate)
+  - [Day 20 - CI / CD Pipelines with Jenkins - Job/Project 3](#day-20---ci--cd-pipelines-with-jenkins---jobproject-3)
 
 
 ## Day 1 - Intro to Cloud & AWS
@@ -86,3 +88,10 @@
 ## Day 17 - CI / CD Pipelines with Jenkins
 
 * [CI/CD Pipelines and Jenkins](CI/CI-CD-with-Jenkins)
+
+## Day 18,19 - Preparation to Final Quality Gate
+
+## Day 20 - CI / CD Pipelines with Jenkins - Job/Project 3
+
+* [CI/CD Pipelines with Jenkins](CI/CI-CD-with-Jenkins)
+
