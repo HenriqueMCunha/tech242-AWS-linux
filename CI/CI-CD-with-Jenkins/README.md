@@ -222,6 +222,8 @@ There's several compelling reasons to build a CI/CD pipeline:
 `
   * 5.4b - Explanation - This command connects to the remote server, changes the working directory and executes the command to clean and package. 
 
+* Notes - The `chmod 777` command is very permissive and generally not recommended for security reasons. It gives read, write, and execute permissions to everyone.
+
 
 ### Structure
 
