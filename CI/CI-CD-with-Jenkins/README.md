@@ -14,8 +14,10 @@
   - [Build a new project on Jenkins](#build-a-new-project-on-jenkins)
   - [Building a CI / CD pipeline with Jenkins](#building-a-ci--cd-pipeline-with-jenkins)
     - [Job/Project 3](#jobproject-3)
+    - [Blockers](#blockers)
+      - [Main blocker - SSHing into the EC2 Instance through Jenkins.](#main-blocker---sshing-into-the-ec2-instance-through-jenkins)
+      - [Permissions:](#permissions)
     - [Structure](#structure)
-    - [Notes to integrate further](#notes-to-integrate-further)
 
 CI / CD is essentially a set of practices:
 * Continuous Integration
@@ -224,14 +226,19 @@ There's several compelling reasons to build a CI/CD pipeline:
 
 * Notes - The `chmod 777` command is very permissive and generally not recommended for security reasons. It gives read, write, and execute permissions to everyone.
 
+### Blockers
+
+#### Main blocker - SSHing into the EC2 Instance through Jenkins.
+
+* The main difficulty to SSHin to the EC2 Instance was that the EC2 instance requires a confirmation in order to login.
+* To avoid that, we use the command `-o StrictHostKeyChecking=no` in order to skip this step.
+
+#### Permissions:
+
+* Another block I experienced was with permissions accessing the `/repo` directory as it is in the root directory.
+* To bypass that, I used the command `sudo chmod -R /repo`. The explanation is the steps above.
 
 ### Structure
 
 ![jenkins-ci-cd-diagram.png](../../readme-images/jenkins-ci-cd-diagram.png)
 
-
-### Notes to integrate further
-
-* When a change is made in dev, have they been fully tested yet? There should be a system to of how you test it.
-* Main branch is production ready code only.
-* Pipeline will take care of testing and mergin into dev.
