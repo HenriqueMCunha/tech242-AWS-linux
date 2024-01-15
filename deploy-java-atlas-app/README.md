@@ -1,5 +1,13 @@
 # Deploy a Java Atlas App
 
+- [Deploy a Java Atlas App](#deploy-a-java-atlas-app)
+  - [Steps](#steps)
+    - [Plan Script](#plan-script)
+    - [Test everything manually](#test-everything-manually)
+    - [Assemble Script](#assemble-script)
+    - [Testing automation in new VM](#testing-automation-in-new-vm)
+
+
 ## Steps
 
 * Create and launch new EC2 Instance

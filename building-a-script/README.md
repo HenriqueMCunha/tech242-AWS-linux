@@ -1,5 +1,15 @@
 # Building a Script in Linux
 
+- [Building a Script in Linux](#building-a-script-in-linux)
+    - [Create a new script file](#create-a-new-script-file)
+    - [Plan our script](#plan-our-script)
+    - [Manual Testing](#manual-testing)
+    - [How to run a script file](#how-to-run-a-script-file)
+    - [How to check if script is working as intended](#how-to-check-if-script-is-working-as-intended)
+    - [Environment Variables](#environment-variables)
+      - [Persistency of Environment Variables](#persistency-of-environment-variables)
+
+
 ### Create a new script file
 
 Create a filen empty file with the file extension `.sh` (sh for shell).

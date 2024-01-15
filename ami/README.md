@@ -1,5 +1,10 @@
 # AMI - Amazon Machine Image
 
+- [AMI - Amazon Machine Image](#ami---amazon-machine-image)
+  - [Creating an AMI](#creating-an-ami)
+  - [Launch instance From AMI](#launch-instance-from-ami)
+  - [Deregistering AMI](#deregistering-ami)
+
 An AMI or Amazon Machine Image is a template that simplifies the process of launching and managing virtual servers (or instances) in the cloud.
 
 In essence, we create an AMI by creating a snapshot of the current EC2 instance that is running.

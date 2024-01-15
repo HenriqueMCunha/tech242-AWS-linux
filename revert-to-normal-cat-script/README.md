@@ -1,5 +1,14 @@
 # Revert changes script
 
+- [Revert changes script](#revert-changes-script)
+  - [Change image back to the friday the 13th](#change-image-back-to-the-friday-the-13th)
+  - [Move into repository](#move-into-repository)
+  - [Load package](#load-package)
+  - [Move back into user repository](#move-back-into-user-repository)
+  - [Remove image from s3 bucket](#remove-image-from-s3-bucket)
+  - [Remove bucket](#remove-bucket)
+
+
 First thing to be done should be to change cat image back to the Friday the 13th image.
 
 ## Change image back to the friday the 13th 

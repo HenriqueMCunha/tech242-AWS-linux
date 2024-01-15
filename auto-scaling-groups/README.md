@@ -1,5 +1,25 @@
 # Auto Scaling Groups
 
+- [Auto Scaling Groups](#auto-scaling-groups)
+  - [Scaling](#scaling)
+    - [Vertical Scaling](#vertical-scaling)
+      - [Limitations](#limitations)
+    - [Horizontal Scaling](#horizontal-scaling)
+  - [Auto-Scaling](#auto-scaling)
+  - [Diagram](#diagram)
+  - [Steps to creating an Auto Scaling Group](#steps-to-creating-an-auto-scaling-group)
+    - [1. Have a Virtual Machine Running](#1-have-a-virtual-machine-running)
+    - [2. Make an AMI out of that VM](#2-make-an-ami-out-of-that-vm)
+    - [3. Create a Launch Template](#3-create-a-launch-template)
+    - [4. Test Launch Template](#4-test-launch-template)
+    - [5. Create Auto Scaling Group](#5-create-auto-scaling-group)
+      - [5a. For creating an auto scaling group, we'll need to first give it a descriptive name and select the desired launch template.](#5a-for-creating-an-auto-scaling-group-well-need-to-first-give-it-a-descriptive-name-and-select-the-desired-launch-template)
+        - [5b. Next, we'll need to select the VPC and the Availability Zones and subnets. In this case, we only want to select availability zones 1a, 1b, 1c.](#5b-next-well-need-to-select-the-vpc-and-the-availability-zones-and-subnets-in-this-case-we-only-want-to-select-availability-zones-1a-1b-1c)
+        - [5c. Attach to a load balancer](#5c-attach-to-a-load-balancer)
+        - [5d. Configure Group Size and Scaling](#5d-configure-group-size-and-scaling)
+      - [5e. Adding tags](#5e-adding-tags)
+
+
 ## Scaling
 
 Scaling is the ability to handle increeased workload or demand by expanding the resources, infrastucture or processes of a system. 

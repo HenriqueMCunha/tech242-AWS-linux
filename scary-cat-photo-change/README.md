@@ -1,5 +1,23 @@
 # Change home page picture to scary cat photo Script
 
+- [Change home page picture to scary cat photo Script](#change-home-page-picture-to-scary-cat-photo-script)
+  - [Download cat picture](#download-cat-picture)
+  - [Rename image](#rename-image)
+  - [Create Bucket (Not included in the main script but still tested)](#create-bucket-not-included-in-the-main-script-but-still-tested)
+  - [Create a variable for bucket name](#create-a-variable-for-bucket-name)
+  - [Disable Block Public access](#disable-block-public-access)
+  - [Define bucket policy to allow public read access](#define-bucket-policy-to-allow-public-read-access)
+- [Configure S3 Bucket](#configure-s3-bucket)
+  - [Upload to bucket](#upload-to-bucket)
+  - [Download image from bucket to crrent working directory](#download-image-from-bucket-to-crrent-working-directory)
+  - [Move image to correct repository](#move-image-to-correct-repository)
+  - [change image](#change-image)
+  - [Move into correct repository](#move-into-correct-repository)
+  - [Load image into running application](#load-image-into-running-application)
+  - [End Result:](#end-result)
+  - [Blockers:](#blockers)
+
+
 ## Download cat picture
 
 `wget https://img.freepik.com/premium-photo/scary-cat-ai-generated_259696-3040.jpg`

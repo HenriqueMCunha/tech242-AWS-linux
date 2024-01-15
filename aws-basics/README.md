@@ -1,4 +1,12 @@
-## The Basics of AWS
+# The Basics of AWS
+
+- [The Basics of AWS](#the-basics-of-aws)
+    - [Key Features of AWS:](#key-features-of-aws)
+    - [How do AWS Regions and Availability Zones work together?](#how-do-aws-regions-and-availability-zones-work-together)
+      - [Why are AWS Regions and Availability Zones important?](#why-are-aws-regions-and-availability-zones-important)
+    - [What are AWS Points of Presence (PoPs)](#what-are-aws-points-of-presence-pops)
+      - [How do AWS PoPs work?](#how-do-aws-pops-work)
+
 
 Amazon Web Services (AWS) is a comprehensive, global cloud computing platform that provides a wide range of services. Businesses of all sizes can use AWS to run their applications, store their data, and analyze information. AWS is a pay-as-you-go service, so you only pay for the resources you use.
 

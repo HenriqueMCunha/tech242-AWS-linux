@@ -1,5 +1,10 @@
 # Deploy Java Atlas App Using User Data
 
+- [Deploy Java Atlas App Using User Data](#deploy-java-atlas-app-using-user-data)
+    - [Before Editing](#before-editing)
+    - [After Editing](#after-editing)
+
+
 One of the important things to consider when using user data to deploy Java App is location of directories.
 The reason for that is that when using user data to deploy app rather than using a script manually, the default user is going to be the root user.
 

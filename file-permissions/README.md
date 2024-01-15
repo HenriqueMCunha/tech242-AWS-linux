@@ -1,5 +1,21 @@
 # File Permissions
 
+- [File Permissions](#file-permissions)
+  - [Does being the owner of a file mean you have full permissions on that file?](#does-being-the-owner-of-a-file-mean-you-have-full-permissions-on-that-file)
+  - [Types of Permissions](#types-of-permissions)
+  - [Giving Permissions to User entity](#giving-permissions-to-user-entity)
+  - [Giving Permissions to Group entity](#giving-permissions-to-group-entity)
+  - [Giving Permissions to Other entity](#giving-permissions-to-other-entity)
+  - [You give the following permissions to a \[file: Use\](file: Us "‌")r permissions are read-only, Group permissions are read and write, Other permissions are read, write and execute. You are logged in as the user which is owner of the file. What permissions will you have on this file? Explain.](#you-give-the-following-permissions-to-a-file-usefile-us-r-permissions-are-read-only-group-permissions-are-read-and-write-other-permissions-are-read-write-and-execute-you-are-logged-in-as-the-user-which-is-owner-of-the-file-what-permissions-will-you-have-on-this-file-explain)
+  - [Here is one line from the ls -l. Work everything you can about permissions on this file or directory.](#here-is-one-line-from-the-ls--l-work-everything-you-can-about-permissions-on-this-file-or-directory)
+    - [-rwxr-xr-- 1 tcboony staff  123 Nov 25 18:36 keeprunning.sh](#-rwxr-xr---1-tcboony-staff--123-nov-25-1836-keeprunningsh)
+  - [Numeric Values for Permissions](#numeric-values-for-permissions)
+    - [What can you with the values assign read + write permissions?](#what-can-you-with-the-values-assign-read--write-permissions)
+    - [What value would assign read, write and execute permissions?](#what-value-would-assign-read-write-and-execute-permissions)
+    - [What value would assign read and execute permissions?](#what-value-would-assign-read-and-execute-permissions)
+    - [Often, a file or directory's mode/permissions are represented by 3 numbers. What do you think 644 would mean?](#often-a-file-or-directorys-modepermissions-are-represented-by-3-numbers-what-do-you-think-644-would-mean)
+
+
 ## Does being the owner of a file mean you have full permissions on that file?
 
 No, being the owner of a file does not automatically mean you have full permissions on that file. File permissions are a set of access restrictions that control who can read, write, and execute a file. These permissions are granted to the file's owner, the file's group, and anyone else who has access to the file or directory.

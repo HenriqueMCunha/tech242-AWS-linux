@@ -1,5 +1,25 @@
 # S3 Storage 
 
+- [S3 Storage](#s3-storage)
+    - [It is available globally and has a level of redundancy:](#it-is-available-globally-and-has-a-level-of-redundancy)
+    - [It also provides High Availability:](#it-also-provides-high-availability)
+    - [How S3 Storage helps in disaster recovery:](#how-s3-storage-helps-in-disaster-recovery)
+  - [Buckets](#buckets)
+  - [Login in to AWS CLI](#login-in-to-aws-cli)
+  - [Create a bucket](#create-a-bucket)
+    - [Gives list of buckets](#gives-list-of-buckets)
+    - [Get a help menu for AWS commands](#get-a-help-menu-for-aws-commands)
+    - [Make bucket](#make-bucket)
+    - [Check files in the specified bucket](#check-files-in-the-specified-bucket)
+    - [Output of this echo will redirect (\>) to the test.txt file](#output-of-this-echo-will-redirect--to-the-testtxt-file)
+    - [Copies/uploads the file into the bucket](#copiesuploads-the-file-into-the-bucket)
+    - [Download files from aws s3 bucket to current working directory](#download-files-from-aws-s3-bucket-to-current-working-directory)
+    - [Delete single file from s3 bucket](#delete-single-file-from-s3-bucket)
+    - [Delete all files fom s3 bucket (DANGEROUS)](#delete-all-files-fom-s3-bucket-dangerous)
+    - [Remove bucket (cannot be done with objects inside)](#remove-bucket-cannot-be-done-with-objects-inside)
+    - [Remove bucket WITH ALL OBJECTS INSIDE (EXTREMELY DANGEROUS)](#remove-bucket-with-all-objects-inside-extremely-dangerous)
+
+
 S3 Storage (or Amazon Simple Storage Service) is a scalable and highly durable object storage service provided by Amazon Web Services (AWS).  It is designed to store and retrieve any amount of data from anywhere on the web. S3 is commonly used for backup, archiving, content distribution, data storage for web applications, and more.
 
 ### It is available globally and has a level of redundancy:

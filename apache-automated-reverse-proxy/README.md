@@ -1,5 +1,12 @@
 # Apache Automated Proxy
 
+- [Apache Automated Proxy](#apache-automated-proxy)
+  - [Set up an APache Web Server](#set-up-an-apache-web-server)
+  - [Configure Apache Web Server Reverse Proxy](#configure-apache-web-server-reverse-proxy)
+    - [Tried to create a virutal host configuration file but unsuccessfully](#tried-to-create-a-virutal-host-configuration-file-but-unsuccessfully)
+    - [Instead reconfigured existing 000-default.conf file](#instead-reconfigured-existing-000-defaultconf-file)
+      - [Reconfigured by overwriting current 000-default.conf file](#reconfigured-by-overwriting-current-000-defaultconf-file)
+
 ## Set up an APache Web Server
 
 ## Configure Apache Web Server Reverse Proxy

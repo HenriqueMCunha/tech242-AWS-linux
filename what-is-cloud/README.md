@@ -1,5 +1,22 @@
 # What is the Cloud?
 
+- [What is the Cloud?](#what-is-the-cloud)
+    - [How does cloud computing work?](#how-does-cloud-computing-work)
+    - [What are cloud services?](#what-are-cloud-services)
+    - [There are Four main TYPES of cloud deployment:](#there-are-four-main-types-of-cloud-deployment)
+    - [The cloud has several advantages over traditional on-premises computing, including:](#the-cloud-has-several-advantages-over-traditional-on-premises-computing-including)
+    - [It also has disadvantages like:](#it-also-has-disadvantages-like)
+    - [CapEx vs OpEx](#capex-vs-opex)
+      - [Capital Expenditures (CapEx)](#capital-expenditures-capex)
+      - [Operating Expenses (OpEx)](#operating-expenses-opex)
+    - [Market share](#market-share)
+    - [4 Pillars of DevOps](#4-pillars-of-devops)
+      - [How cloud computing link into the cloud](#how-cloud-computing-link-into-the-cloud)
+    - [Three largest cloud Providers](#three-largest-cloud-providers)
+    - [Cloud computing Business Model](#cloud-computing-business-model)
+    - [Steam Case Study](#steam-case-study)
+
+
 The cloud is a term that refers to a group of remote servers that are connected to the Internet and that can be accessed by users to store data, run applications, and access other services. Cloud computing is the on-demand delivery of computer system resources, especially data storage and computing power, without active management by the user.
 
 * Servers that are accessed over the internet, and the software and databases that run on those servers.

@@ -1,5 +1,14 @@
 # Processes
 
+- [Processes](#processes)
+  - [Two types of Processes](#two-types-of-processes)
+    - [User Processes](#user-processes)
+    - [System Processes](#system-processes)
+      - [Commands](#commands)
+    - [Managing processes](#managing-processes)
+      - [Kill Command](#kill-command)
+
+
 Processes are usually run in the background and are run by the operating system.
 They are in memory and look like they're possibly using the CPU:
 * Sometimes they give the appearance that they're being processed but they may in fact be just present in memory.

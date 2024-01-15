@@ -1,5 +1,12 @@
 # Using `sed` command to automate Apache Reverse Proxy
 
+- [Using `sed` command to automate Apache Reverse Proxy](#using-sed-command-to-automate-apache-reverse-proxy)
+  - [Using `sed` command](#using-sed-command)
+    - [Fist Try](#fist-try)
+    - [Updated command](#updated-command)
+  - [Complete Automated Scipt](#complete-automated-scipt)
+    - [Launching an Instance from AMI](#launching-an-instance-from-ami)
+
 Previously, my solution to was to overwrite or create a new virtual host configuration file.
 
 ```

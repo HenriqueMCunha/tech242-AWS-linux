@@ -1,5 +1,8 @@
 # AWS Virtual Private Cloud (VPC)
 
+- [AWS Virtual Private Cloud (VPC)](#aws-virtual-private-cloud-vpc)
+  - [Architecture for custom VPC](#architecture-for-custom-vpc)
+
 When you create an aws account there is a vpc that is created for us in every region
 Like having our own apartment o flat in a shared building by default.
 We just get it automatically.

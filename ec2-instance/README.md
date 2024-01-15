@@ -1,5 +1,15 @@
 # How to Create an EC2 Instance
 
+- [How to Create an EC2 Instance](#how-to-create-an-ec2-instance)
+    - [1. Create Instance](#1-create-instance)
+    - [2. Select AMI](#2-select-ami)
+    - [3. Choose a key pair](#3-choose-a-key-pair)
+    - [4. Create own Security Group](#4-create-own-security-group)
+    - [5. Double check everything we selected](#5-double-check-everything-we-selected)
+    - [6. Launch the instance](#6-launch-the-instance)
+    - [7. Connect to the instance](#7-connect-to-the-instance)
+
+
 Before creating Instance, make sure I am in Ireland Zone.
 
 ### 1. Create Instance

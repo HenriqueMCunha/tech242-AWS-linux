@@ -1,5 +1,14 @@
 # Research file ownership
 
+- [Research file ownership](#research-file-ownership)
+  - [Why is managing file ownership important?](#why-is-managing-file-ownership-important)
+  - [What is the command to view file ownership?](#what-is-the-command-to-view-file-ownership)
+  - [What permissions are set when a user creates a file or directory?](#what-permissions-are-set-when-a-user-creates-a-file-or-directory)
+    - [Who does file or directory belong to?](#who-does-file-or-directory-belong-to)
+  - [Why does the owner, by default, not receive X permissions when they create a file?](#why-does-the-owner-by-default-not-receive-x-permissions-when-they-create-a-file)
+  - [What command is used to change the owner of a file or directory?](#what-command-is-used-to-change-the-owner-of-a-file-or-directory)
+
+
 ## Why is managing file ownership important?
 
 Managing file ownership is important in order to maintain data security by preventing unauthorized access.

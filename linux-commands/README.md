@@ -1,5 +1,11 @@
 # Linux Commands
 
+
+- [Linux Commands](#linux-commands)
+  - [Navigating Commands](#navigating-commands)
+  - [File Commands](#file-commands)
+  - [Super User](#super-user)
+
 ## Navigating Commands
 
 * `cd ~` Takes user back to home directory
