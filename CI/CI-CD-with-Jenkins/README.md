@@ -14,6 +14,7 @@
   - [Build a new project on Jenkins](#build-a-new-project-on-jenkins)
   - [Building a CI / CD pipeline with Jenkins](#building-a-ci--cd-pipeline-with-jenkins)
     - [Job/Project 3](#jobproject-3)
+    - [Altenative](#altenative)
     - [Blockers](#blockers)
       - [Main blocker - SSHing into the EC2 Instance through Jenkins.](#main-blocker---sshing-into-the-ec2-instance-through-jenkins)
       - [Permissions:](#permissions)
@@ -225,6 +226,16 @@ There's several compelling reasons to build a CI/CD pipeline:
   * 5.4b - Explanation - This command connects to the remote server, changes the working directory and executes the command to clean and package. 
 
 * Notes - The `chmod 777` command is very permissive and generally not recommended for security reasons. It gives read, write, and execute permissions to everyone.
+
+### Altenative
+
+* We can use the EOF command to be able to put several commands and separate it in different lines in order to increase readability.
+
+```
+ssh -o "StrictHostKeyChecking=no" ubuntu@ip <<EOF
+  # put your commands here
+EOF
+```
 
 ### Blockers
 
